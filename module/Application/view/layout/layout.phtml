@@ -1,0 +1,21 @@
+<?php echo $this->doctype(); ?>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+    ?>
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        ->prependStylesheet($this->basePath() . '/css/style.css')
+        ->prependStylesheet($this->basePath() . '/lib/ext-4.2.1.883/resources/css/ext-all.css') ?>
+</head>
+<body>
+<?php echo $this->content; ?>
+<?php echo $this->headScript()->prependFile($this->basePath() . '/lib/ext-4.2.1.883/ext-all-debug.js'); ?>
+<?php echo $this->inlineScript() ?>
+</body>
+</html>
