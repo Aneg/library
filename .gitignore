@@ -8,3 +8,4 @@ nbproject
 .settings
 vendor
 config/autoload/doctrine.local.php
+config/autoload/global.php
